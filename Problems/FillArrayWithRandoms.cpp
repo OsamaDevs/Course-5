@@ -36,7 +36,7 @@ void printArray(int array[], int arraySize) {
     cout<< "] " << endl;
 }
 
-int getSumOfArrayNumbers(int array[] , int arraySize) {
+int getMaxOfArrayNumbers(int array[] , int arraySize) {
     int maximum = array[0];
     for (int i = 0; i<arraySize ; i++) {
         if (array[i] > maximum)
@@ -60,7 +60,7 @@ int main() {
 
         printArray(array, size);
 
-        cout<< "Max Number In Array: " << getSumOfArrayNumbers(array, size) << endl;
+        cout<< "Max Number In Array: " << getMaxOfArrayNumbers(array, size) << endl;
         size = readPositiveNumber("Enter Array Size: ");
     }
 

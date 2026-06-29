@@ -3,19 +3,6 @@
 //
 
 
-//
-// Created by osama on 5/25/2026.
-//
-
-//
-// Created by osama on 5/25/2026.
-//
-
-
-//
-// Created by osama on 5/25/2026.
-//
-
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -50,7 +37,7 @@ void printArray(int array[], int arraySize) {
     cout<< "] " << endl;
 }
 
-double getSumOfArrayNumbers(int array[] , int arraySize) {
+double getAverageOfArray(int array[] , int arraySize) {
     int sum = array[0];
 
     for (int i = 1; i<arraySize ; i++) {
@@ -74,7 +61,7 @@ int main() {
 
         printArray(array, size);
 
-        cout<< "Average Of Numbers In The Array: " << getSumOfArrayNumbers(array, size) << endl;
+        cout<< "Average Of Numbers In The Array: " << getAverageOfArray(array, size) << endl;
         size = readPositiveNumber("Enter Array Size: ");
     }
 

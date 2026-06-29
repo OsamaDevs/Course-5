@@ -22,7 +22,7 @@ int generateRandom(int from , int to) {
     return (rand()% (to-from +1) + from);
 }
 
-void fillArrayWithRepeatedRandomNumbers(int array[], int arraySize) {
+void fillArrayWithRandomNumbers(int array[], int arraySize) {
     for (int i = 0; i<arraySize; i++) {
         array[i] = generateRandom(1, 100);
     }
@@ -57,7 +57,7 @@ int main() {
     int arraySize = readPositiveNumber("Enter Array Size: ");
     int array[arraySize];
 
-    fillArrayWithRepeatedRandomNumbers(array ,arraySize);
+    fillArrayWithRandomNumbers(array ,arraySize);
 
     printArray(array , arraySize);
 

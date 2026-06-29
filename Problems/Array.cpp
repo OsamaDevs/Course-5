@@ -17,7 +17,7 @@ int readNumber(string message) {
     return number;
 }
 
-void fillArrayWithRepeatedRandomNumbers(int array[] , int arraySize) {
+void fillArrayWithUserInput(int array[] , int arraySize) {
     cout<< "Fill Array Elements: "<< '\n';
     for (int i = 0; i< arraySize ; i++) {
         cout<< "Enter Element [" << i+1 << "]";
@@ -44,7 +44,7 @@ int main() {
 
     int size = readNumber("Enter The Number Of Elements Of The Array: ");
     int array[size];
-    fillArrayWithRepeatedRandomNumbers(array , size);
+    fillArrayWithUserInput(array , size);
     int target = readNumber("Enter The Number You Want To Check: ");
 
     cout<< target << " is repeated "<< findArrayElement(array, size ,target) << " time(s) in the array\n";

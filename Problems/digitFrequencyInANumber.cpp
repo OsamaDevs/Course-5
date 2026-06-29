@@ -33,6 +33,7 @@ int getFrequnceyOfaDigit(int number , short digit) {
 void printResult(int number , short digit , int frequency) {
     cout<< "The Digit " << digit << " Was Repeated " << frequency << " Time/s In: " << number << endl;
 }
+
 int main() {
     int number = readPositiveInteger("Enter The Full Number: ");
     short digit = readPositiveInteger("Enter The Digit To Get Frequency: ");

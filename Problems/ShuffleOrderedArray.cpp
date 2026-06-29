@@ -33,7 +33,7 @@ void swap(int &firstNumber, int &secondNumber ) {
 
 }
 
-void shuffleArray(int array[] , int arraySize) {
+void ShuffleArray(int array[] , int arraySize) {
 
     for (int i = 0; i<arraySize; i++) {
         //int randIndex1 = generateRandomNumber(0,arraySize-1);
@@ -63,7 +63,7 @@ int main() {
     fillArrayWithRepeatedRandomNumbers(array ,  size);
     printArray(array,size);
 
-    shuffleArray(array  , size);
+    ShuffleArray(array  , size);
 
     printArray(array , size);
 

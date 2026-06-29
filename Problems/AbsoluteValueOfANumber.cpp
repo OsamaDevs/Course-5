@@ -22,6 +22,7 @@ int getAbsoluteValue(int number) {
         return number;
     else
         return number * -1;
+
 }
 
 int main() {

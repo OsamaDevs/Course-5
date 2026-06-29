@@ -26,7 +26,7 @@ int generateRandom(int from , int to) {
     return (rand()% (to-from +1) + from);
 }
 
-void fillArrayWithRepeatedRandomNumbers(int array[], int arraySize) {
+void fillArrayWithRandomNumbers(int array[], int arraySize) {
     for (int i = 0; i<arraySize; i++) {
         array[i] = generateRandom(1, 100);
     }
@@ -70,7 +70,7 @@ int main() {
     int size = readPositiveNumber("Enter Array Size: ");
     int array1[100] , array2[100];
 
-    fillArrayWithRepeatedRandomNumbers(array1, size);
+    fillArrayWithRandomNumbers(array1, size);
 
     cout<< "Array 1: " << endl;
     printArray(array1 , size);

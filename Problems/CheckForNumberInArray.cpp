@@ -45,7 +45,7 @@ void printArray(int array[], int arraySize) {
     cout<< "] " << endl;
 }
 
-bool searchForNumberInArray(int array[] , int arraySize ,int targetNumber) {
+bool isIntegerInArray(int array[] , int arraySize ,int targetNumber) {
 
     for (int i = 0; i< arraySize; i++) {
         if (array[i] == targetNumber )
@@ -82,7 +82,7 @@ int main() {
 
     int targetNumber = readPositiveNumber("Enter The Number To Search For Inside The Array: ");
 
-    bool isFoundInArray = searchForNumberInArray(array, size, targetNumber);
+    bool isFoundInArray = isIntegerInArray(array, size, targetNumber);
 
     printSearchResult(targetNumber , isFoundInArray);
 

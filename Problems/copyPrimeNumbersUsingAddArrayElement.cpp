@@ -22,7 +22,7 @@ int generateRandom(int from , int to) {
     return (rand()% (to-from +1) + from);
 }
 
-void fillArrayWithRepeatedRandomNumbers(int array[], int arraySize) {
+void fillArrayWithRandomNumbers(int array[], int arraySize) {
     for (int i = 0; i<arraySize; i++) {
         array[i] = generateRandom(1, 100);
     }
@@ -37,6 +37,7 @@ enPrime checkPrime(int number) {
 
     return Prime;
 }
+
 void addElementToArray(int array[] , int element ,int &arraySize) {
 
         array[arraySize] = element;
@@ -72,7 +73,7 @@ int main() {
     int array2Size = 0;
     int array1[array1Size] , array2[array1Size];
 
-    fillArrayWithRepeatedRandomNumbers(array1, array1Size);
+    fillArrayWithRandomNumbers(array1, array1Size);
 
     cout<< "Array 1: " << endl;
     printArray(array1 , array1Size);
